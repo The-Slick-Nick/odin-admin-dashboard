@@ -137,6 +137,16 @@ body {
     grid-column: 2 / 3;
 }
 
+
+.title {
+    font-weight: bold;
+}
+
+.flavor {
+    font-size: 0.5em;
+}
+
+
 .section-trending {
     grid-row: 2 / 3;
     grid-column: 2 / 3;
