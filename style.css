@@ -50,6 +50,7 @@ body {
     border: 1px solid black;
 }
 
+
 .wrapper.master {
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 4fr;
@@ -60,6 +61,39 @@ body {
 .wrapper.header {
     grid-column: 2 / 3;
     background-color: var(--rose-1);
+
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+
+.search {
+    grid-template-columns: min-content 1fr;
+    align-items: center;
+}
+
+.searchbar {
+    background-color: red;
+    height: 3ch;
+    border-radius: 3ch;
+    /* TODO Replace default styling with my own  */
+}
+
+.greeting {
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+}
+
+
+.wrapper.profile-options {
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+}
+
+.wrapper.actions {
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 1rem;
 }
 
 
@@ -120,6 +154,10 @@ body {
 }
 
 
+/**************************************************
+ * Placeholders
+ **************************************************/
+.pfp,
 .icon-placeholder {
     width: 1ch;
     height: 1ch;
