@@ -178,10 +178,21 @@ body {
 
 .sidebar-item {
     color: var(--font-color-light);
+
+    &.large {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
 }
+
+
 
 .sidebar-item * {
     display: inline-block;
+}
+
+.sidebar-section {
+    margin-bottom: 2rem;
 }
 
 
