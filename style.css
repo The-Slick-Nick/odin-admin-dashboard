@@ -32,6 +32,11 @@
     --rose-7: #6a294c;
     --rose-8: #491d35;
     --rose-9: #2b111f;
+
+
+    --font-color-light: #ffffff;
+    --font-color-dark: #000000;
+    --font-color-medium: #555555;
 }
 
 body {
@@ -138,7 +143,13 @@ body {
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
     gap: 1rem;
+
+    &>button {
+        color: var(--font-color-light);
+    }
 }
+
+
 
 
 /**************************************************
@@ -152,9 +163,14 @@ body {
     grid-auto-rows: min-content;
 }
 
+.sidebar-item {
+    color: var(--font-color-light);
+}
+
 .sidebar-item * {
     display: inline-block;
 }
+
 
 
 /**************************************************
@@ -191,6 +207,7 @@ body {
 
 .project-description {
     font-size: 0.6rem;
+    color: var(--font-color-medium);
 }
 
 .section-announcements {
@@ -198,13 +215,13 @@ body {
     grid-column: 2 / 3;
 }
 
-
 .title {
     font-weight: bold;
 }
 
 .flavor {
     font-size: 0.5em;
+    color: var(--font-color-medium);
 }
 
 
@@ -221,14 +238,16 @@ body {
         "pfp working-on";
 
     align-items: center;
-}
 
-.trending-item .pfp {
-    width: 25px;
-    height: 25px;
-    border-radius: 25px;
-    border: 2px solid red;
-    grid-area: pfp;
+    &>.pfp {
+        width: 25px;
+        height: 25px;
+        border-radius: 25px;
+        border: 2px solid red;
+        grid-area: pfp;
+        justify-self: center;
+    }
+
 }
 
 .handle {
@@ -242,6 +261,7 @@ body {
     font-size: 0.8rem;
     grid-area: working-on;
     align-self: self-start;
+    color: var(--font-color-medium);
 }
 
 
