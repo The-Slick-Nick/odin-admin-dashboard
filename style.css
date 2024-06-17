@@ -12,6 +12,17 @@
     margin: 0;
 }
 
+button,
+input[type="submit"],
+input[type="reset"] {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    outline: inherit;
+}
+
 
 
 
@@ -146,6 +157,8 @@ body {
 
     &>button {
         color: var(--font-color-light);
+        background-color: var(--rose-7);
+        border-radius: 1rem;
     }
 }
 
