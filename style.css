@@ -14,6 +14,7 @@
 
 button,
 input[type="submit"],
+input[type="text"],
 input[type="reset"] {
     background: none;
     color: inherit;
@@ -114,24 +115,36 @@ body {
     background-color: var(--rose-1);
     box-shadow: 0px 2px 2px 0px var(--shadow-gray);
 
-    grid-template-columns: 3fr 2fr;
+    /* Note: I'm using "phantom columns" here to make
+     * the grid gap act as though it were a margin-left and margin-right */
+    grid-template-columns: 0fr 3fr 2fr 0fr;
     grid-template-rows: 1fr 1fr5px;
+
+    column-gap: 1rem;
 }
 
 
-.search {
+.wrapper.search {
+    grid-column: 2 / 3;
     grid-template-columns: min-content 1fr;
     align-items: center;
 }
 
-.searchbar {
-    background-color: red;
-    height: 3ch;
+
+input[type="text"].searchbar {
+    /* background-color: #aaaaaa; */
+    background-color: var(--background-color-medium);
+    height: 2ch;
     border-radius: 3ch;
+    caret-color: var(--background-color-dark);
+    cursor: text;
+    padding: 1rem;
+    margin: 0px 0.5rem;
     /* TODO Replace default styling with my own  */
 }
 
 .wrapper.greeting {
+    grid-column: 2 / 3;
     align-items: center;
 
     grid-template-columns: auto auto 1fr;
@@ -164,7 +177,8 @@ body {
 }
 
 .wrapper.profile-options {
-    grid-template-columns: 1fr repeat(3, auto) 1fr;
+    grid-column: 3 / 4;
+    grid-template-columns: 1fr repeat(3, auto);
     align-items: center;
     gap: 1rem;
 
@@ -184,6 +198,7 @@ body {
 
 
 .wrapper.actions {
+    grid-column: 3 / 4;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
     gap: 1rem;
@@ -191,7 +206,8 @@ body {
     &>button {
         color: var(--font-color-light);
         background-color: var(--rose-7);
-        border-radius: 1rem;
+        border-radius: 3rem;
+        height: 3rem;
     }
 }
 
