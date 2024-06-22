@@ -15,6 +15,7 @@
 button,
 input[type="submit"],
 input[type="text"],
+input[type="search"],
 input[type="reset"] {
     background: none;
     color: inherit;
@@ -124,9 +125,9 @@ body {
     /* Note: I'm using "phantom columns" here to make
      * the grid gap act as though it were a margin-left and margin-right */
     grid-template-columns: 0fr 3fr 2fr 0fr;
-    grid-template-rows: 1fr 1fr5px;
+    grid-template-rows: 1fr 1fr 0px;
 
-    column-gap: 1rem;
+    gap: 1rem;
 }
 
 
@@ -143,7 +144,8 @@ body {
     display: inline block;
 }
 
-input[type="text"].searchbar {
+input[type="text"].searchbar,
+input[type="search"].searchbar {
     /* background-color: #aaaaaa; */
     background-color: var(--background-color-medium);
     height: 2ch;
@@ -282,6 +284,7 @@ input[type="text"].searchbar {
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr 1fr;
     background-color: transparent;
+    overflow: scroll;
 
     .content-section {
         display: grid;
