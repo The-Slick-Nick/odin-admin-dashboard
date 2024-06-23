@@ -206,6 +206,7 @@ input[type="search"].searchbar {
     &>.icon.notifications-on,
     &>.icon.notifications-off {
         grid-column: 2;
+        cursor: pointer;
     }
 
     &>.pfp {
