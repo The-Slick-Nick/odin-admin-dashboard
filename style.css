@@ -71,19 +71,11 @@ body {
 /**************************************************
  * Placeholders & Styling Templates
  **************************************************/
-.pfp,
-.icon-placeholder {
-    width: 1ch;
-    height: 1ch;
-    border: 2px solid black;
-    border-radius: 1px;
-}
 
 .pfp {
-    width: 25px;
-    height: 25px;
-    border-radius: 25px;
-    border: 2px solid red;
+    width: 75px;
+    height: 75px;
+    border-radius: 75px;
 }
 
 .card {
@@ -199,9 +191,6 @@ input[type="search"].searchbar {
     align-items: center;
     gap: 1rem;
 
-    /* &>.bell { */
-    /*     grid-column: 2; */
-    /* } */
 
     &>.icon.notifications-on,
     &>.icon.notifications-off {
@@ -210,6 +199,9 @@ input[type="search"].searchbar {
 
     &>.pfp {
         grid-column: 3;
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
     }
 
     &>.username {
@@ -280,7 +272,7 @@ input[type="search"].searchbar {
 .sidebar-section {
     margin-bottom: 2rem;
     display: grid;
-    gap: 3px;
+    gap: 0.5rem;
 }
 
 
@@ -395,10 +387,9 @@ input[type="search"].searchbar {
     align-items: center;
 
     &>.pfp {
-        width: 25px;
-        height: 25px;
-        border-radius: 25px;
-        border: 2px solid red;
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
         grid-area: pfp;
         justify-self: center;
     }
