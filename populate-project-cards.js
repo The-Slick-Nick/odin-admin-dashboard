@@ -17,15 +17,15 @@ project_cards.forEach(
 
         star_icon.classList.add("star");
         star_icon.setAttribute("alt", "star icon");
-        star_icon.setAttribute("src", "./assets/star-icon.svg");
+        star_icon.setAttribute("src", "./assets/icons/star-icon.svg");
 
         eye_icon.classList.add("eye");
         eye_icon.setAttribute("alt", "eye icon");
-        eye_icon.setAttribute("src", "./assets/eye-plus.svg");
+        eye_icon.setAttribute("src", "./assets/icons/eye-plus.svg");
 
         merge_icon.classList.add("merge");
         merge_icon.setAttribute("alt", "merge icon");
-        merge_icon.setAttribute("src", "./assets/merge-icon.svg");
+        merge_icon.setAttribute("src", "./assets/icons/merge-icon.svg");
 
         let action_wrapper = document.createElement("div");
         action_wrapper.classList.add("project-actions");
