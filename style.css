@@ -109,10 +109,12 @@ body {
 
 
 .wrapper.master {
-    grid-template-columns: 1fr 4fr;
-    grid-template-rows: min(200px, 1fr) 4fr;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr;
     z-index: -1;
     background-color: transparent;
+    min-height: 100vh;
+    min-width: 100vw;
 }
 
 /**************************************************
@@ -244,6 +246,7 @@ input[type="search"].searchbar {
 
     grid-auto-rows: min-content;
     box-shadow: 2px 0px 2px 0px var(--shadow-gray);
+    padding: 0px 2rem;
 }
 
 
