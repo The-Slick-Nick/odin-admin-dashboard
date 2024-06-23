@@ -347,6 +347,11 @@ input[type="search"].searchbar {
     place-self: end end;
 }
 
+.project-actions img {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
 /*** Announcements ***/
 
 .section-announcements {
